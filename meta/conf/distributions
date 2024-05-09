@@ -1,0 +1,5 @@
+Codename: stable
+Components: main
+Architectures: amd64
+Description: Unofficial APT repository for Debian/Ubuntu client of Discord
+SignWith: 3781EF8B4C2953A4

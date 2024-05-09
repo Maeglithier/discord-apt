@@ -1,0 +1,164 @@
+name: Atualizar
+
+# Controla quando o workflow vai ser executado
+on:
+  # https://crontab.guru/#0_12_*_*_*
+  # Atualmente configurado para executar a todo dia, às 12:00 AM.
+  schedule:
+    # Formato do cron:
+    # Minuto Hora Dia-do-Mês Mês Dia-da-Semana
+    - cron:  '0 12 * * *'
+  # Permite executar manualmente este workflow pela aba Actions
+  workflow_dispatch:
+
+jobs:
+  Atualizar:
+    runs-on: ubuntu-latest
+    env:
+      PUSH: 1
+      BAIXAR: 1
+      ATUALIZAR: 1
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Verificar atualizações e atualizar o repositório
+      - name: Verificar se há atualização 🔎
+        run: |
+          function comparar (){
+            atual_maior=$(echo "$1" | cut -d "." -f 1)
+            atual_medio=$(echo "$1" | cut -d "." -f 2)
+            atual_menor=$(echo "$1" | cut -d "." -f 3 | cut -d "-" -f 1)
+
+            recente_maior=$(echo "$2" | cut -d "." -f 1)
+            recente_medio=$(echo "$2" | cut -d "." -f 2)
+            recente_menor=$(echo "$2" | cut -d "." -f 3 | cut -d "-" -f 1)
+
+            if [ "$recente_maior" -gt "$atual_maior" ]; then
+              return 0
+            fi
+            if [ "$recente_medio" -gt "$atual_medio" ]; then
+              return 0
+            fi
+            if [ "$recente_menor" -gt "$atual_menor" ]; then
+              return 0
+            fi
+            return 1
+          }
+
+          recente=$(echo $(curl -s "https://discord.com/api/download?platform=linux&format=deb" | cut -d "/" -f 6))
+          recente_ptb=$(echo $(curl -s "https://discord.com/api/download/ptb?platform=linux&format=deb" | cut -d "/" -f 6))
+          recente_canary=$(echo $(curl -s "https://discord.com/api/download/canary?platform=linux&format=deb" | cut -d "/" -f 6))
+          echo "Ultima versão lançada: ${recente}"
+          echo "Ultima versão lançada (PTB): ${recente_ptb}"
+          echo "Ultima versão lançada (CANARY): ${recente_canary}"
+          echo "RECENTE=${recente}" >> $GITHUB_ENV
+          echo "RECENTE_PTB=${recente_ptb}" >> $GITHUB_ENV
+          echo "RECENTE_CANARY=${recente_canary}" >> $GITHUB_ENV
+          if [ -f 'versao_atual' ] && [ -f 'versao_atual_ptb' ] && [ -f 'versao_atual_canary' ]; then
+            atual=$(cat versao_atual)
+            atual_ptb=$(cat versao_atual_ptb)
+            atual_canary=$(cat versao_atual_canary)
+            echo "Versão atual: ${atual}"
+            echo "Versão atual (PTB): ${atual_ptb}"
+            echo "Versão atual (CANARY): ${atual_canary}"
+            echo "Comparando versões..."
+            if comparar "${atual}" "${recente}" && comparar "${atual_ptb}" "${recente_ptb}" && comparar "${atual_canary}" "${recente_canary}" ; then
+              echo "Atualização identificada."
+              echo "BAIXAR=0" >> $GITHUB_ENV
+            else
+              echo "Não há atualização."
+            fi
+          else
+            echo "Não sei qual é a versão atual, por isso vou forçar uma atualização."
+            echo "BAIXAR=0" >> $GITHUB_ENV
+          fi
+      - name: Baixar atualização 🔥
+        if: ${{ env.BAIXAR == 0 }}
+        run: |
+          function baixar_atualizacao() {
+            versao=$(echo "$1" | cut -d "-" -f 1)
+            versao_ptb=$(echo "$2" | cut -d "-" -f 1)
+            versao_canary=$(echo "$3" | cut -d "-" -f 1)
+
+            echo "Baixando: amd64"
+            wget -q "https://dl.discordapp.net/apps/linux/${versao}/discord-${versao}.deb"
+            if [ "$?" -eq "0" ]; then
+              echo "Concluido"
+            else
+              return 1
+            fi
+
+            echo "Baixando (PTB): amd64"
+            wget -q "https://dl-ptb.discordapp.net/apps/linux/${versao_ptb}/discord-ptb-${versao_ptb}.deb"
+            if [ "$?" -eq "0" ]; then
+              echo "Concluido"
+            else
+              return 1
+            fi
+
+            echo "Baixando (CANARY): amd64"
+            wget -q "https://dl-canary.discordapp.net/apps/linux/${versao_canary}/discord-canary-${versao_canary}.deb"
+            if [ "$?" -eq "0" ]; then
+              echo "Concluido"
+            else
+              return 1
+            fi
+
+            return 0
+          }
+
+          if baixar_atualizacao "${{ env.RECENTE }}" "${{ env.RECENTE_PTB }}" "${{ env.RECENTE_CANARY }}"; then
+            echo "ATUALIZAR=0" >> $GITHUB_ENV
+          else
+            echo "Erro ao baixar o arquivo."
+          fi
+      # Importar a chave PGP privada e Informar suas informações
+      - name: Importar chave PGP 🔑
+        if: ${{ env.ATUALIZAR == 0 }}
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+      - name: Informar chave importada ✅
+        if: ${{ env.ATUALIZAR == 0 }}
+        run: |
+          echo "fingerprint : ${{ steps.import_gpg.outputs.fingerprint }}"
+          echo "keyid       : ${{ steps.import_gpg.outputs.keyid }}"
+          echo "name        : ${{ steps.import_gpg.outputs.name }}"
+      # Organizar repositório apt e realizar o push
+      - name: Instalar dependências 🔨
+        if: ${{ env.ATUALIZAR == 0 }}
+        run: |
+          sudo apt install reprepro
+      - name: Atualizar repositório APT 🚨
+        if: ${{ env.ATUALIZAR == 0 }}
+        run: |
+          function atualizar_repositorio() {
+            versao=$(echo "$1" | cut -d "-" -f 1)
+            versao_ptb=$(echo "$2" | cut -d "-" -f 1)
+            versao_canary=$(echo "$3" | cut -d "-" -f 1)
+            reprepro --basedir "$(pwd)/meta" includedeb stable "./discord-${versao}.deb" "./discord-ptb-${versao_ptb}.deb" "./discord-canary-${versao_canary}.deb"
+            if [ -d dists ]; then rm -r dists; fi
+            if [ -d pool ]; then rm -r pool; fi
+            mv meta/dists ./
+            mv meta/pool ./
+            checksum_amd64=$(sha256sum pool/main/d/discord/discord_${versao}_amd64.deb)
+            checksum_ptb_amd64=$(sha256sum pool/main/d/discord-ptb/discord-ptb_${versao_ptb}_amd64.deb)
+            checksum_canary_amd64=$(sha256sum pool/main/d/discord-canary/discord-canary_${versao_canary}_amd64.deb)
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/d/discord/discord_[0-9]\.[0-9]+\.[0-9]_amd64.deb,$checksum_amd64," README.md
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/d/discord-ptb/discord-ptb_[0-9]+\.[0-9]+\.[0-9]+_amd64.deb,$checksum_ptb_amd64," README.md
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/d/discord-canary/discord-canary_[0-9]+\.[0-9]+\.[0-9]+_amd64.deb,$checksum_canary_amd64," README.md
+            echo "PUSH=0" >> $GITHUB_ENV
+          }
+          
+          atualizar_repositorio "${{ env.RECENTE }}" "${{ env.RECENTE_PTB }}" "${{ env.RECENTE_CANARY }}"
+          echo "${{ env.RECENTE }}" > versao_atual
+          echo "${{ env.RECENTE_PTB }}" > versao_atual_ptb
+          echo "${{ env.RECENTE_CANARY }}" > versao_atual_canary
+      - uses: EndBug/add-and-commit@v9
+        if: ${{ env.PUSH == 0 }}
+        with:
+          message: 'Atualizando os pacotes'
+          add: 'versao_atual versao_atual_ptb versao_atual_canary dists pool README.md'
+          default_author: github_actions
