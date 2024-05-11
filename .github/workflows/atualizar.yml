@@ -62,7 +62,7 @@ jobs:
             echo "Versão atual (PTB): ${atual_ptb}"
             echo "Versão atual (CANARY): ${atual_canary}"
             echo "Comparando versões..."
-            if comparar "${atual}" "${recente}" && comparar "${atual_ptb}" "${recente_ptb}" && comparar "${atual_canary}" "${recente_canary}" ; then
+            if comparar ${atual} ${recente} || comparar ${atual_ptb} ${recente_ptb} || comparar ${atual_canary} ${recente_canary} ; then
               echo "Atualização identificada."
               echo "BAIXAR=0" >> $GITHUB_ENV
             else
