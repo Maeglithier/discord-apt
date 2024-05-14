@@ -1,37 +1,37 @@
 Package: discord
-Version: 0.0.53
+Version: 0.0.54
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
 Architecture: amd64
-Installed-Size: 248440
+Installed-Size: 248444
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord/discord_0.0.53_amd64.deb
-Size: 100957682
-SHA256: aadf9ee497a8445cb17df5d5b91d5375e240fac0f3e6301bc55a3f72a42e31d3
-SHA1: 09c1e50c04e497fee95d01416de99e7e0fab410a
-MD5sum: b8b93634baaf3e38ed54837a21fb61c5
+Filename: pool/main/d/discord/discord_0.0.54_amd64.deb
+Size: 100957696
+SHA256: 6d7f68bca6e619657f240de0edd63e229b3fb34c781ff5cd85ec4c0f29da0acc
+SHA1: 925f33a8d81245035d18b90e3beedd60c8615d18
+MD5sum: dc56f1c1a788848d31893e2a273c424e
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.
 
 Package: discord-canary
-Version: 0.0.392
+Version: 0.0.393
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
 Architecture: amd64
-Installed-Size: 248476
+Installed-Size: 248480
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord-canary/discord-canary_0.0.392_amd64.deb
-Size: 100990510
-SHA256: af2b360517d1d337fedc1795656d1f64b05e4561a0f199ba69ae2fe9ec64ea30
-SHA1: fa988729f2e5648a0256dde322b6fc5e31a39df3
-MD5sum: f5f6dd564e14c7ad13bbc75e66074cd6
+Filename: pool/main/d/discord-canary/discord-canary_0.0.393_amd64.deb
+Size: 100990524
+SHA256: 1d8f526dd294d7f47912080a8d506a9df3cec457ae19521a227825423adfdbcf
+SHA1: c6c787bd8118b2825152afba4201af7943e880af
+MD5sum: ebec562e4991ebb4c34c3eeb28c23e35
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.
