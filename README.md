@@ -29,7 +29,7 @@ sudo rm /etc/apt/sources.list.d/discord.list
 
 # Checksum
 7985eb89806e2c52f1059ceb91328df9e2efa01a4c069147895359563c3aa5f6  pool/main/d/discord/discord_0.0.55_amd64.deb  
-a1d99b383d3184dba0595f5fbac10b78414eb63bdb7e871b59c925de16d0fda2  pool/main/d/discord-ptb/discord-ptb_0.0.86_amd64.deb  
+4764331e7bd54e637c47a327872ecb7881c24481c58463d4c90a5d66df0f359a  pool/main/d/discord-ptb/discord-ptb_0.0.87_amd64.deb  
 b7644bdb138a3f53ab38764ccb52f6307b2d5905d23cd1e5f56d4987c17a96e6  pool/main/d/discord-canary/discord-canary_0.0.410_amd64.deb  
 
 # Copyright
