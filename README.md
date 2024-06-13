@@ -30,7 +30,7 @@ sudo rm /etc/apt/sources.list.d/discord.list
 # Checksum
 3a33deeefe5176b4bc8fc1c7bb55250d750e04d87a51e775d69b11de1e3d7c4c  pool/main/d/discord/discord_0.0.56_amd64.deb  
 7cec99ea75623388c21469ebe27d519e4f46cfb5401f82d63b9013442e19b94a  pool/main/d/discord-ptb/discord-ptb_0.0.88_amd64.deb  
-f833226b7a2bdd470a9fd2b829c30b0a58a4401e596c200c6c8f22309620e5e4  pool/main/d/discord-canary/discord-canary_0.0.415_amd64.deb  
+99e2ef4ee9b33e796d41480faffbab8246a7eea325fbb077b9c0e1f01c42c70f  pool/main/d/discord-canary/discord-canary_0.0.418_amd64.deb  
 
 # Copyright
 O instalador do Discord (arquivos deb) são distribuidos sob os [Termos de serviço](https://discord.com/terms) ou qualquer outro termo ou licença usada pelo Discord.
