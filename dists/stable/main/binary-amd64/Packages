@@ -1,24 +1,24 @@
 Package: discord
-Version: 0.0.56
+Version: 0.0.57
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
 Architecture: amd64
-Installed-Size: 248440
+Installed-Size: 248448
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord/discord_0.0.56_amd64.deb
-Size: 100957354
-SHA256: 3a33deeefe5176b4bc8fc1c7bb55250d750e04d87a51e775d69b11de1e3d7c4c
-SHA1: 86bced44413737f68dbd012c6c0be6e8681b5b0f
-MD5sum: e1cad469d0e364f6cfc55bb67c412ad6
+Filename: pool/main/d/discord/discord_0.0.57_amd64.deb
+Size: 100957642
+SHA256: 0c5f8ca2a67d6544f6c788ad297a1289319de6a7df1306def926bda1474bdf76
+SHA1: eb42c80ba58358a127abfc9e3df46974f982469c
+MD5sum: 247903cc261511fc65ec60d8efae1635
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.
 
 Package: discord-canary
-Version: 0.0.423
+Version: 0.0.425
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
@@ -27,11 +27,11 @@ Installed-Size: 252704
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord-canary/discord-canary_0.0.423_amd64.deb
-Size: 102757542
-SHA256: 2f4ddb266f28134936274eebe10eeac8e5510a8d3f80896622f8cd9c7a7a3a38
-SHA1: cf57c95204393e48910f96dd55e4430775b642c2
-MD5sum: 0c6f5409716b17c6e4cf649dbb54a5ce
+Filename: pool/main/d/discord-canary/discord-canary_0.0.425_amd64.deb
+Size: 102757544
+SHA256: 63267e0bcc699b071fdd20c7f0860cf0d9fe6862776af5a79de32c0290b3a6e2
+SHA1: bf408ff8218f7269e5a20cf75d46e67f52796d9e
+MD5sum: cf92000b5c4d351f3558f8a72311888f
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.
