@@ -1,17 +1,17 @@
 Codename: stable
-Date: Fri, 28 Jun 2024 12:35:55 UTC
+Date: Tue, 02 Jul 2024 12:34:46 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Discord
 MD5Sum:
- 8a8abf1ae536bf8fd0dd06a8b6660599 2360 main/binary-amd64/Packages
- c970859c774e8288394db58052c0bb76 776 main/binary-amd64/Packages.gz
+ 685d4b139a497966b1b7438897a6ee98 2360 main/binary-amd64/Packages
+ 121db030c3bc1f84a3e6d332a1d119fc 775 main/binary-amd64/Packages.gz
  4539e1e5783605c3589fc7cc64cdd899 111 main/binary-amd64/Release
 SHA1:
- 8b22aea03f7cf5a635b2e4065faa268fff6150f7 2360 main/binary-amd64/Packages
- ba5e1afa98309907096a9a5665d33dc8edc26df4 776 main/binary-amd64/Packages.gz
+ e5d6f3284ee0b81d9655f618559f3a2577d435b9 2360 main/binary-amd64/Packages
+ 0524d03d3c19cfbd3b69666499204786981b4308 775 main/binary-amd64/Packages.gz
  1d4d533b28caf2e166a73fd202071d418e8d28e3 111 main/binary-amd64/Release
 SHA256:
- 40cac68fcc5aaab1d3d29d0ce341bf86ac2477bb0c4935be51af21692d4e9b93 2360 main/binary-amd64/Packages
- 4353a0067a2e845c7dd1171cb1fe470f7813fcf5384c823d1b9731032d235552 776 main/binary-amd64/Packages.gz
+ bf86ebb738283cb5fb3d0143dcf06e161031197509d718738c13b041ecd91a84 2360 main/binary-amd64/Packages
+ 0dbc7743ea89424b57df7b0eefc100efb2f8b4521841cd006697bade2d46087b 775 main/binary-amd64/Packages.gz
  eb83d47776e2396349a90f30509578b88c4f42e5848488550a81a0a65392095c 111 main/binary-amd64/Release
