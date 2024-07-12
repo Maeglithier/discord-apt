@@ -31,7 +31,7 @@ sudo rm /etc/apt/sources.list.d/discord.list
 
 9a164c549cf60ed35e253448cd699073e75f52d6a2e600af3a8d3150d20983ef  pool/main/d/discord/discord_0.0.59_amd64.deb
 
-eab8bd9edf935253e8240d7e133c376fa10c937896b0e72870934f90ba26395e  pool/main/d/discord-ptb/discord-ptb_0.0.93_amd64.deb
+562cc32506bfe3504871fb7dbb7f0a1b2ce89bca574ef9a25f83762d3bf7c2c0  pool/main/d/discord-ptb/discord-ptb_0.0.94_amd64.deb
 
 0d8c4e90496a895f7f505826e39075b522b608f03433022712a19ea242099516  pool/main/d/discord-canary/discord-canary_0.0.452_amd64.deb
 
