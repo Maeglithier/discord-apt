@@ -33,7 +33,7 @@ dc8264ad01aeb2f7316e38dc72aa5714e4b3af8e317da31db1777a993656cb0c  pool/main/d/di
 
 cf100043b991251ede07b900b7ed96ef2c3da70926913039b0fe5c2f19fef234  pool/main/d/discord-ptb/discord-ptb_0.0.95_amd64.deb
 
-50240f93847eac506b7c5c36a6de3f4b9a60c9c923760611764155c83cd0562e  pool/main/d/discord-canary/discord-canary_0.0.453_amd64.deb
+45e1d519f83941a257f55079b86bcc0e719325333459cb5e70a0259658c2479e  pool/main/d/discord-canary/discord-canary_0.0.454_amd64.deb
 
 # Copyright
 O instalador do Discord (arquivos deb) são distribuidos sob os [Termos de serviço](https://discord.com/terms) ou qualquer outro termo ou licença usada pelo Discord.

@@ -18,20 +18,20 @@ Description: Chat for Communities and Friends
  hang out, and stay close with your friends and communities.
 
 Package: discord-canary
-Version: 0.0.453
+Version: 0.0.454
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
 Architecture: amd64
-Installed-Size: 257832
+Installed-Size: 257824
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord-canary/discord-canary_0.0.453_amd64.deb
-Size: 104512572
-SHA256: 50240f93847eac506b7c5c36a6de3f4b9a60c9c923760611764155c83cd0562e
-SHA1: 18ac1baf993cfea52a06ccce025452e90787f69f
-MD5sum: 8d316b6a628babab1c3216e969406f44
+Filename: pool/main/d/discord-canary/discord-canary_0.0.454_amd64.deb
+Size: 104512582
+SHA256: 45e1d519f83941a257f55079b86bcc0e719325333459cb5e70a0259658c2479e
+SHA1: 3e941ef09196bb6c944f057288c7ca0abf810a6d
+MD5sum: e0569e1570f3b8e713e7395cfe359655
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.
