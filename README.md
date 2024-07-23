@@ -29,7 +29,7 @@ sudo rm /etc/apt/sources.list.d/discord.list
 
 # Checksum
 
-dc8264ad01aeb2f7316e38dc72aa5714e4b3af8e317da31db1777a993656cb0c  pool/main/d/discord/discord_0.0.60_amd64.deb
+818c998f5a91caec55dc3076788f73e07f4a91f8c96233e9f8f2cdd60cfca4b6  pool/main/d/discord/discord_0.0.61_amd64.deb
 
 cf100043b991251ede07b900b7ed96ef2c3da70926913039b0fe5c2f19fef234  pool/main/d/discord-ptb/discord-ptb_0.0.95_amd64.deb
 
