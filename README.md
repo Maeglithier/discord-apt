@@ -36,6 +36,7 @@ sudo rm /etc/apt/sources.list.d/discord.list
 30c9a47e3e4006925741d84e8d2f82e8d78b880ea79fd61ab58346b9ee6b1b27  pool/main/d/discord-canary/discord-canary_0.0.463_amd64.deb
 
 # Copyright
+
 O instalador do Discord (arquivos deb) são distribuidos sob os [Termos de serviço](https://discord.com/terms) ou qualquer outro termo ou licença usada pelo Discord.
 
 Declaro que não tomo autoria pelos arquivos deb presentes na pasta pool e que este repositório possui a unica e exclusiva finalidade de distribuir estes arquivos de forma tal que um usuário qualquer possa instalar e atualizar o discord usando o APT. Com isso quero dizer que o repositório irá baixar a ultima versão disponivel desses arquivos e deixar disponivel neste repositório.
