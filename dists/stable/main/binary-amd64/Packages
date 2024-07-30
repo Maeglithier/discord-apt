@@ -18,26 +18,26 @@ Description: Chat for Communities and Friends
  hang out, and stay close with your friends and communities.
 
 Package: discord-canary
-Version: 0.0.463
+Version: 0.0.464
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
 Architecture: amd64
-Installed-Size: 257848
+Installed-Size: 257856
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord-canary/discord-canary_0.0.463_amd64.deb
-Size: 104515276
-SHA256: 30c9a47e3e4006925741d84e8d2f82e8d78b880ea79fd61ab58346b9ee6b1b27
-SHA1: 19660cf0ecf386b9a1f91ba9a8b532d1aec38901
-MD5sum: 4ddfa5f86633edd6b3e109f3caaf514b
+Filename: pool/main/d/discord-canary/discord-canary_0.0.464_amd64.deb
+Size: 104515442
+SHA256: b49d802f28685d7ad0e2947cde47235262603565a706e9fc8b506718a1ed1829
+SHA1: 0c1530a0a1aa1b749d9b806937f00d2a26066af3
+MD5sum: 6daac5c334ca39f9b34995b46bdbf0b4
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.
 
 Package: discord-ptb
-Version: 0.0.96
+Version: 0.0.97
 Depends: libc6, libasound2, libatomic1, libnotify4, libnspr4, libnss3, libstdc++6, libxss1, libxtst6
 Recommends: libappindicator1 | libayatana-appindicator1
 Homepage: https://discord.com
@@ -46,11 +46,11 @@ Installed-Size: 254064
 Maintainer: Discord Maintainer Team <native-team@discord.com>
 Priority: optional
 Section: net
-Filename: pool/main/d/discord-ptb/discord-ptb_0.0.96_amd64.deb
-Size: 103058516
-SHA256: 09f3cbfd01d79046749d2bdcfa7810eec4b77481c355b6a6a014e147615033b1
-SHA1: 8f93a8e0eef3f3fd5966af1779d40bc29dfb79d3
-MD5sum: d8f7278a3a93e126f1b2d7ac50f9e0ec
+Filename: pool/main/d/discord-ptb/discord-ptb_0.0.97_amd64.deb
+Size: 103058320
+SHA256: 1e3b26c72c7a9f572bfe1ae6dd40de1070a5ee58c2db922ef6b7bf6f73860492
+SHA1: 750e0f24d24ca2051c2b428fc4598a64d6eafc58
+MD5sum: a50a5c8b390abc6c3e25ca1123486280
 Description: Chat for Communities and Friends
  Discord is the easiest way to communicate over voice, video, and text. Chat,
  hang out, and stay close with your friends and communities.

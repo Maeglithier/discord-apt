@@ -2,35 +2,35 @@
 Hash: SHA512
 
 Codename: stable
-Date: Mon, 29 Jul 2024 12:37:23 UTC
+Date: Tue, 30 Jul 2024 12:36:54 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Discord
 MD5Sum:
- e96e125ca97e8a99a9f10f12481182ae 2360 main/binary-amd64/Packages
- b891a6c1ddcfb768e4fdbed4b0483aae 775 main/binary-amd64/Packages.gz
+ d0e31cb3f268daf954a8e634d96d92e2 2360 main/binary-amd64/Packages
+ 81b20755cf1c8c136e590c976f7bcc29 777 main/binary-amd64/Packages.gz
  4539e1e5783605c3589fc7cc64cdd899 111 main/binary-amd64/Release
 SHA1:
- 1abfe806ddb051ee603dec7f844140da324f1fce 2360 main/binary-amd64/Packages
- 298818d4873f76028e6a61b191e14e1339344fc9 775 main/binary-amd64/Packages.gz
+ c58aa860e995f7761f94dc3382fc052cace6f95a 2360 main/binary-amd64/Packages
+ c786b988aea224334257a214e018b14c47a172cb 777 main/binary-amd64/Packages.gz
  1d4d533b28caf2e166a73fd202071d418e8d28e3 111 main/binary-amd64/Release
 SHA256:
- 2600e122c7f21fac52d9f0e505a1f6b11d567999a675afaff3207bab7ba6b965 2360 main/binary-amd64/Packages
- e5ab699413efd6aa7598f1c749ae9654c414ee528126657645423b2cc16799de 775 main/binary-amd64/Packages.gz
+ a857a0b74ff9874d7aeb2e343caeb4771756064841e0ae1ed989defb261bdd2b 2360 main/binary-amd64/Packages
+ 24163e8f961700f60b086614527763efdcab61955a05b339634cf40a66586012 777 main/binary-amd64/Packages.gz
  eb83d47776e2396349a90f30509578b88c4f42e5848488550a81a0a65392095c 111 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEZnRRyvvCedVZXkQfN4Hvi0wpU6QFAmanjQMACgkQN4Hvi0wp
-U6T5YQ//co1tFVPDbHnkH/o09VgpAhbUlkJT3WLyHuGmnNSxkYJNNc4p1ghfNg1b
-1JZKVcKtxBxdVaq5APWu20O9nUN8b8QMGcQPer1NcVjm625v1DC6uJBjTW3LnHux
-rpw6tffIL9nFJA+BGl8fAwGnhsqrfNX7OinL+cCbpCe7pYJM5V4geB/y1XVSzCcm
-0IfbU3/JA8/CQ1oehK7P/Wp779LKpIqF09ZcnHQFUxZfjRTd68A0Vm+atujXKCUc
-mY+mKO2qWRMMAxp9YoyhqmpkBxH5/rBLf0BEC6cnOoC5k66BaCulrBx8F3H5325N
-Fx2H6QyaVXyU61rkl1IwD9LdaXLbI+WeZWSv2jiih8e37bdqKOKR6cTF8MkhJQ1r
-iw44XyxS+3+0coCO26thxLtK+WhhZxOn5I/3ZZ+4jDwPT8wW/PbB5pNYpy0FyZjP
-df4e2iqCWzxWGehR5h+hSxdqKpgvtlYa6YRBW13Qm5ZrteHnH2vw25B1bat2t3e0
-7x3oKbxdhS802QPsglBP4RrLAOU57HXFj6i8jfazoFK5g+H9PMmmXAjMkUsvMub+
-zkEsCTJANkL65vCRzskrM7NFfBsDGkELWo7bjI8lpvJPPc3wHsC92UJ34sbuVTVj
-7hEnkVkLvl7Lq5HpgvXj0KiQpiuqB1pc5GLWQ8vFT4I4IP0b6Dg=
-=TeEP
+iQIzBAEBCgAdFiEEZnRRyvvCedVZXkQfN4Hvi0wpU6QFAmao3mcACgkQN4Hvi0wp
+U6RFWxAAptlaStpofYrfNi7gV1uASJa7yxF2/xzKRF0ZI7992hQGlDedLekrZzUT
+/Oe4Bl+nzeP8yDHd71Bo8DQBSJZCjtUI/MIkkAY5iAwrAD5wwq0qBFSTsSKvd54C
+8mGuhgSnO5Y+oSm17gLWSHzZCyDLUq4iQ2LFAezRQar+wNQTrpHV3+GRhU3CKsfJ
+0Gc1k4l4dbxdKGgn0/8UWkyYHMpbndwb5LTitMGcuyxakXpu5YpAt8DPCka1oMDQ
+xh2Mkaua3heg9zTJul2w+LzOryU6hSRNrDHkaopOK6Ye9q+1OLPr67GgrjNC9jaT
+fkfZj257shb+apJ3vhdJjYrT0uwmqIT+AFdSNuJII74NO+kiVNcrAqh1wZetUvxT
+4dJVeuLcYe6mSc/WwZPpc37MO3871T8TCXgV6J8ojtkAz4tRH4oZHizxZr2oC6kg
+ye0Fr8OfnqKDapuy4/QpW4KS1sl6pUvXtWDBBZl7ZvZjPYP2LvIUVH20gn1GIj8z
+ZvmNqSV6boPmZCXJgPeU9Mm717ur9r+CXlmj1TbYy0xtDwYs1+PdmwBHK0UpEjhd
+zCxemZi4sFlwqt4RheFBSC8sTdoVKuGfvu2mNjD+9klN1u5AYZ5vD7VzfMlsuBTJ
+45qSR2sRHUWR4CWZjMXnTqpkjaJ+EdOlVkN5ikeWcANV+ll5hhU=
+=VPS2
 -----END PGP SIGNATURE-----
